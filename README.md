@@ -1,6 +1,10 @@
 # NgxSimplePrint
 This is a simple directive to print html section with angular.
 
+## DEMO
+
+[Try the Demo](https://josueaqp92.github.io/ngx-simple-print/)
+
 ## Installation
 
 ```

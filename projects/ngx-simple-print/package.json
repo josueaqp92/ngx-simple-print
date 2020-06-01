@@ -1,6 +1,7 @@
 {
   "name": "ngx-simple-print",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "keywords": ["angualar", "print", "directive", "print-directive", "ngx-print", "print-html", "print-section", "ngx", "printable"],
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
