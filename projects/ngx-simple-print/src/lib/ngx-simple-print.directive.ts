@@ -41,7 +41,6 @@ export class NgxSimplePrintDirective implements OnInit {
     this.printSection = document.createElement('div');
     this.printSection.id = this.sectionToPrintId;
     document.body.appendChild(this.printSection);
-    this.addStyles();
   }
 
   addStyles() {
