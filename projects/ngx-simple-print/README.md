@@ -1,24 +1,43 @@
 # NgxSimplePrint
+This is a simple directive to print html section with angular.
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
+## Installation
 
-## Code scaffolding
+```
+npm install ngx-simple-print --save
+```
 
-Run `ng generate component component-name --project ngx-simple-print` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-simple-print`.
-> Note: Don't forget to add `--project ngx-simple-print` or else it will be added to the default project in your `angular.json` file. 
 
-## Build
+## Usage
 
-Run `ng build ngx-simple-print` to build the project. The build artifacts will be stored in the `dist/` directory.
+Import the module into your `app.module.ts` file.
 
-## Publishing
+```ts
+import { NgxSimplePrintModule } from 'nx-simple-print';
 
-After building your library with `ng build ngx-simple-print`, go to the dist folder `cd dist/ngx-simple-print` and run `npm publish`.
+@NgModule({
+  imports: [ NgxSimplePrintModule ]
+})
+export class AppModule {
+}
+```
 
-## Running unit tests
+And you can use the directive in your app
+```typescript
+import { Component } from '@angular/core';
 
-Run `ng test ngx-simple-print` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+@Component({
+  selector: 'app',
+  template: `
+    <button
+        roNgxSimplePrint
+        [printContentId]="'contentToPrint'"
+    >Print</button>
+    <div id="contentToPrint">
+        my printable content...
+    </div>
+  `,
+})
+export class AppComponent {
+}
+```
