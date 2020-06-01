@@ -3,7 +3,7 @@ import {Directive, HostListener, Input, OnInit} from '@angular/core';
 @Directive({
   selector: '[roNgxSimplePrint]'
 })
-export class NgxSimplePrintDirective implements OnInit{
+export class NgxSimplePrintDirective implements OnInit {
   printSection: any;
   sectionToPrintId = 'ngxSimplePrintSection';
   constructor() { }
@@ -23,7 +23,7 @@ export class NgxSimplePrintDirective implements OnInit{
   }
 
   @HostListener('click')
-  onclickPrint(event: Event) {
+  onclickPrint() {
     const elemToPrint = document.getElementById(this.printContentId);
     if (elemToPrint) {
       this.printSection.innerHTML = '';
