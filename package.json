@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "start:test": "ng serve ngx-simple-print-test --port 4500",
     "build:lib": "ng build ngx-simple-print",
-    "build:teset": "ng build ngx-simple-print-test"
+    "build:test": "ng build ngx-simple-print-test",
+    "deploy:test": "gh-pages -d dist/ngx-simple-print-test"
   },
   "private": true,
   "dependencies": {
@@ -32,10 +33,11 @@
     "@angular/cli": "~8.3.18",
     "@angular/compiler-cli": "~8.2.13",
     "@angular/language-service": "~8.2.13",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "gh-pages": "^3.0.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
