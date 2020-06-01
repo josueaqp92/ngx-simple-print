@@ -1,6 +1,6 @@
 {
   "name": "ngx-simple-print",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start:test": "ng serve ngx-simple-print-test --port 4500"
+    "start:test": "ng serve ngx-simple-print-test --port 4500",
+    "build:lib": "ng build ngx-simple-print",
+    "build:teset": "ng build ngx-simple-print-test"
   },
   "private": true,
   "dependencies": {
